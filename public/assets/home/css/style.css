@@ -1,0 +1,706 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* clear margin padding */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+#navbar-ywsi .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#navbar-ywsi .navbar-nav .nav-link.active {
+    color: #327314;
+}
+
+/* footer */
+footer .bg-footer {
+    background-color: #333;
+    background-image: url("/assets/home/img/bg-footer.png");
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+}
+
+/* custom text color */
+.text-black {
+    color: #3c3c3c;
+}
+
+.text-black-1 {
+    color: #333;
+}
+
+.text-black-2 {
+    color: #555;
+}
+
+.text-yellow {
+    color: #ffff2d;
+}
+
+.text-grey-1 {
+    color: #ddd;
+}
+
+.text-grey-2 {
+    color: #888;
+}
+
+.text-green-1 {
+    color: #4ea824;
+}
+
+.text-green-2 {
+    color: #327314;
+}
+
+/* custom background color */
+.bg-black {
+    background-color: #3c3c3c;
+}
+
+.bg-black-1 {
+    background-color: #333;
+}
+
+.bg-black-2 {
+    background-color: #555;
+}
+
+.bg-yellow {
+    background-color: #ffff2d;
+}
+
+.bg-grey-1 {
+    background-color: #ddd;
+}
+
+.bg-grey-2 {
+    background-color: #888;
+}
+
+.bg-grey-3 {
+    background-color: #f1f1f1;
+}
+
+.bg-green-1 {
+    background-color: #4ea824;
+}
+
+.bg-green-2 {
+    background-color: #327314;
+}
+
+.bg-f5 {
+    background-color: #f5f5f5;
+}
+
+.bg-f7 {
+    background-color: #f7f7f7;
+}
+
+/* custom font weight */
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+/* custom text size */
+.head-1 {
+    font-size: 40px;
+}
+
+.head-2 {
+    font-size: 32px;
+}
+
+.head-3 {
+    font-size: 28px;
+}
+
+.head-4 {
+    font-size: 24px;
+}
+
+.head-5 {
+    font-size: 20px;
+}
+
+.head-6 {
+    font-size: 16px;
+}
+
+.body-1 {
+    font-size: 16px;
+}
+
+.body-2 {
+    font-size: 14px;
+}
+
+.body-3 {
+    font-size: 12px;
+}
+
+.body-4 {
+    font-size: 10px;
+}
+
+.pa-0 {
+    font-size: 32px;
+}
+
+.pa-1 {
+    font-size: 24px;
+}
+
+.pa-2 {
+    font-size: 20px;
+}
+
+.pa-3 {
+    font-size: 16px;
+}
+
+/* pagination style */
+nav ul.pagination li.page-item a.page-link {
+    color: #636363;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 3px;
+}
+nav ul.pagination li.page-item span.page-link {
+    color: #636363;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 3px;
+}
+
+nav ul.pagination li.page-item.active span.page-link {
+    color: #fff;
+    border: 1px solid #327314;
+    background-color: #327314;
+    border-radius: 6px;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+/* button green 2 */
+a.btn.btn-green-2 {
+    background-color: #327314;
+    color: #fff;
+    border: 1px solid #327314;
+}
+
+a.btn.btn-green-2:hover {
+    background-color: transparent;
+    color: #327314;
+    border: 1px solid #327314;
+}
+
+/* style list */
+ul.list-check {
+    list-style: none;
+    padding: 0;
+}
+
+ul.list-check li {
+    padding-left: 1.3em;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul.list-check li::before {
+    content: "\f058";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    margin-right: 5px;
+    color: #327314;
+}
+
+/* dropdown style */
+.dropdown .dropdown-item.active {
+   background-color: transparent;
+   font-weight: 500;
+   color: #327314;
+}
+
+.dropdown .dropdown-item:hover {
+   background-color: transparent;
+   color: #327314;
+}
+
+/* a style */
+a:hover {
+   color: inherit;
+}
+
+/* hr style */
+hr.dash {
+    border: 2px dashed #333;
+}
+
+/* style home */
+/* banner */
+section#banner-home .bg-video {
+    position: relative;
+}
+
+/* card impact */
+.card-impact {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-impact:hover {
+    border: 1px solid #4ea824;
+}
+
+.card-impact::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    background-color: #4ea824;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-impact:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: #4ea824;
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    z-index: -1;
+}
+
+.bg-empowerment {
+    background-image: url("/assets/home/img/homepage/bg-empowerment.png");
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+}
+
+/* style portfolio */
+section#banner-portfolio {
+    background-image: url("/assets/home/img/portfolio/banner-portfolio.png");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+/* style about */
+/* banner */
+section#banner-about {
+    background-image: url("/assets/home/img/about/banner.png");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+/* about */
+section#about {
+    background-image: url("/assets/home/img/about/bg-section-1.png");
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+}
+
+/* team */
+section#team-about h1.head-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#team-about .bg-banner-3 {
+    background-image: url("/assets/home/img/about/banner-3.png");
+    width: 100%;
+    height: auto;
+    background-color: #327314;
+}
+
+/* banner 4 */
+section#banner-4 .bg-banner-4 {
+    background-image: url("/assets/home/img/about/banner-4.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 310px;
+    max-height: fit-content;
+    background-color: #327314;
+    border-radius: 15px;
+}
+
+/* style detail portfolio */
+/* banner */
+section#banner-assessment {
+    background-image: url("/assets/home/img/portfolio/banner-assessment.png");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+section#project {
+    scroll-margin-top: 70px;
+}
+
+section#project .swiper {
+    position: relative;
+    width: 100%;
+    height: 275px;
+}
+
+section#project a:hover {
+    color: #327314;
+}
+
+#purpose {
+    scroll-margin-top: 100px;
+}
+
+#purpose .bg-purpose {
+    background-image: url("/assets/home/img/portfolio/banner-section-1.png");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+section#banner-bumdes {
+    background-image: url("/assets/home/img/portfolio/banner-bumdes.png");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+#impact {
+    scroll-margin-top: 100px;
+}
+
+#impact .bg-impact {
+    background-image: url("/assets/home/img/portfolio/banner-section-1.png");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+/* style pendekatan */
+/* banner */
+section#banner-approach {
+    background-image: url("/assets/home/img/pendekatan/banner.png");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+section#approach-content .left-card-detail {
+    position: relative;
+    height: 550px;
+    background-color: #333;
+    border-radius: 15px;
+}
+
+section#approach-content .right-card-detail {
+    position: relative;
+    height: 550px;
+    background-color: #327314;
+    border-radius: 15px;
+}
+
+/* style pelatihan */
+/* banner */
+section#banner-entrepreneurship {
+   background-image: url("/assets/home/img/pelatihan/banner-entrepreneurship.png");
+   background-size: cover;
+   width: 100%;
+   height: 500px;
+}
+
+/* style publikasi */
+/* banner */
+section#banner-publication {
+   background-image: url("/assets/home/img/pelatihan/banner-publication.png");
+   background-size: cover;
+   width: 100%;
+   height: 500px;
+}
+
+/* style pendampingan */
+/* banner */
+section#banner-accompaniment {
+   background-image: url("/assets/home/img/pelatihan/banner-accompaniment.png");
+   background-size: cover;
+   width: 100%;
+   height: 500px;
+}
+
+/* style kontak */
+/* banner */
+section#banner-contact {
+   background-image: url("/assets/home/img/contact/banner-contact.png");
+   background-size: cover;
+   width: 100%;
+   height: 500px;
+}
+
+section#contact-info .card-contact {
+   border: 2px solid #ddd;
+   transition: all ease-in-out 0.3s;
+   min-height: 200px;
+}
+
+section#contact-info .card-contact:hover {
+   border: 2px solid #0ea44d;
+   box-shadow: 0 0 10px rgba(33, 33, 33, 0.2);
+}
+
+section#map #location-map {
+   height: 400px;
+}
+
+/* Responsive Query */
+@media screen and (min-width: 576px) {
+    section#banner-home .bg-video {
+        position: relative;
+    }
+
+    section#project .swiper {
+        position: relative;
+        width: 100%;
+        height: 320px;
+    }
+
+    section#approach-content .left-card-detail {
+        position: relative;
+        height: 450px;
+        background-color: #333;
+        border-radius: 15px;
+    }
+
+    section#approach-content .right-card-detail {
+        position: relative;
+        height: 450px;
+        background-color: #327314;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section#banner-home .bg-video {
+        position: relative;
+    }
+
+    section#project .swiper {
+        position: relative;
+        width: 100%;
+        height: 440px;
+    }
+
+    section#approach-content .left-card-detail {
+        position: relative;
+        height: 400px;
+        background-color: #333;
+        border-radius: 15px;
+        height: 430px;
+    }
+
+    section#approach-content .right-card-detail {
+        position: relative;
+        height: 400px;
+        background-color: #327314;
+        border-radius: 15px;
+        height: 430px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#banner-home {
+        margin-bottom: 350px;
+    }
+
+    section#banner-home .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    section#project .swiper {
+        position: relative;
+        width: 100%;
+        height: 390px;
+    }
+
+    section#info .row > div:not(:first-child) {
+        border-left: 3px solid #d9d9d9;
+    }
+
+    section#approach-content .left-card-detail {
+        position: absolute;
+        top: 50%;
+        left: 34%;
+        transform: translate(-50%, -50%);
+        height: fit-content;
+    }
+
+    section#approach-content .right-card-detail {
+        position: absolute;
+        top: 50%;
+        right: 34%;
+        transform: translate(50%, -50%);
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section#banner-home {
+        margin-bottom: 460px;
+    }
+
+    section#banner-home .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    section#project .swiper {
+        position: relative;
+        width: 100%;
+        height: 450px;
+    }
+
+    section#approach-content .left-card-detail {
+        position: absolute;
+        top: 50%;
+        left: 29%;
+        transform: translate(-50%, -50%);
+        height: 440px;
+    }
+
+    section#approach-content .right-card-detail {
+        position: absolute;
+        top: 50%;
+        right: 29%;
+        transform: translate(50%, -50%);
+        height: 440px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    section#banner-home {
+        margin-bottom: 550px;
+    }
+
+    section#banner-home .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    section#project .swiper {
+        position: relative;
+        width: 100%;
+        height: 540px;
+    }
+
+    section#approach-content .left-card-detail {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        height: 440px;
+    }
+
+    section#approach-content .right-card-detail {
+        position: absolute;
+        top: 50%;
+        right: 25%;
+        transform: translate(50%, -50%);
+        height: 440px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    section#banner-home {
+        margin-bottom: 640px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    section#banner-home {
+        margin-bottom: 670px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    section#banner-home {
+        margin-bottom: 730px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    section#banner-home {
+        margin-bottom: 740px;
+    }
+}

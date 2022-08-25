@@ -4,7 +4,7 @@
       <i class="fa fa-bars"></i>
    </button>
 
-   <h5 class="head-5 fw-500 text-gray-700">{{ $title }}</h5>
+   <h5 class="head-5 fw-400 text-gray-700">{{ $title }}</h5>
 
    <ul class="navbar-nav ml-auto">
 

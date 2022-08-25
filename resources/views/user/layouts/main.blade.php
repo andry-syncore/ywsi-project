@@ -4,6 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="csrf-token" content="{{ csrf_token() }}">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
    <!-- Bootstrap CSS -->
@@ -50,6 +51,8 @@
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <!-- leaflet JS -->
    <script src="{{ asset('assets/home/js/leaflet.js') }}"></script>
+   <!-- Idle JS -->
+   <script src="{{ asset('assets/admin/js/js-idle.min.js') }}"></script>
    <!-- Optional JS -->
    @stack('js')
 
@@ -76,6 +79,23 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
          }
       }
+
+      // auto logout
+      idle({
+         onIdle: function() {
+            fetch('/web-admin/logout', {
+                  headers: {
+                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  },
+                  method: 'POST'
+               })
+               .then(res => res.text())
+               .then(res => {
+                  window.location.href = '/web-admin'
+               })
+         },
+         idle: 1800000,
+      }).start();
    </script>
 </body>
 

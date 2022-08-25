@@ -4,6 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="csrf-token" content="{{ csrf_token() }}">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <!-- Poppins Font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,10 +55,32 @@
    <script src="{{ asset('assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
    <!-- SB Admin JS -->
    <script src="{{ asset('assets/admin/js/sb-admin-2.min.js') }}"></script>
+   <!-- Idle JS -->
+   <script src="{{ asset('assets/admin/js/js-idle.min.js') }}"></script>
    <!-- Font Awesome JS -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
       integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+   <script>
+
+      // auto logout
+      idle({
+         onIdle: function() {
+            fetch('/web-admin/logout', {
+                  headers: {
+                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  },
+                  method: 'POST'
+               })
+               .then(res => res.text())
+               .then(res => {
+                  window.location.href = '/web-admin'
+               })
+         },
+         idle: 1800000,
+      }).start();
+
+   </script>
 </body>
 
 </html>

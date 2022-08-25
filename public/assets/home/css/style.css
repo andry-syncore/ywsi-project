@@ -51,7 +51,7 @@ h6 {
 /* footer */
 footer .bg-footer {
     background-color: #333;
-    background-image: url("/assets/home/img/bg-footer.png");
+    background-image: url("/storage/img/bg-footer.png");
     background-size: cover;
     width: 100%;
     height: fit-content;
@@ -327,7 +327,7 @@ section#banner-home .bg-video {
 }
 
 .bg-empowerment {
-    background-image: url("/assets/home/img/homepage/bg-empowerment.png");
+    background-image: url("/storage/img/homepage/bg-empowerment.png");
     background-size: cover;
     width: 100%;
     height: fit-content;
@@ -335,7 +335,7 @@ section#banner-home .bg-video {
 
 /* style portfolio */
 section#banner-portfolio {
-    background-image: url("/assets/home/img/portfolio/banner-portfolio.png");
+    background-image: url("/storage/img/portfolio/banner-portfolio.png");
     background-size: cover;
     width: 100%;
     height: 500px;
@@ -344,7 +344,7 @@ section#banner-portfolio {
 /* style about */
 /* banner */
 section#banner-about {
-    background-image: url("/assets/home/img/about/banner.png");
+    background-image: url("/storage/img/about/banner.png");
     background-size: cover;
     width: 100%;
     height: 500px;
@@ -352,7 +352,7 @@ section#banner-about {
 
 /* about */
 section#about {
-    background-image: url("/assets/home/img/about/bg-section-1.png");
+    background-image: url("/storage/img/about/bg-section-1.png");
     background-size: cover;
     width: 100%;
     height: fit-content;
@@ -367,7 +367,7 @@ section#team-about h1.head-1 {
 }
 
 section#team-about .bg-banner-3 {
-    background-image: url("/assets/home/img/about/banner-3.png");
+    background-image: url("/storage/img/about/banner-3.png");
     width: 100%;
     height: auto;
     background-color: #327314;
@@ -375,7 +375,7 @@ section#team-about .bg-banner-3 {
 
 /* banner 4 */
 section#banner-4 .bg-banner-4 {
-    background-image: url("/assets/home/img/about/banner-4.png");
+    background-image: url("/storage/img/about/banner-4.png");
     background-repeat: no-repeat;
     width: 100%;
     min-height: 310px;
@@ -387,7 +387,7 @@ section#banner-4 .bg-banner-4 {
 /* style detail portfolio */
 /* banner */
 section#banner-assessment {
-    background-image: url("/assets/home/img/portfolio/banner-assessment.png");
+    background-image: url("/storage/img/portfolio/banner-assessment.png");
     background-size: cover;
     width: 100%;
     height: 500px;
@@ -412,7 +412,7 @@ section#project a:hover {
 }
 
 #purpose .bg-purpose {
-    background-image: url("/assets/home/img/portfolio/banner-section-1.png");
+    background-image: url("/storage/img/portfolio/banner-section-1.png");
     background-size: cover;
     width: 100%;
     height: auto;
@@ -421,7 +421,7 @@ section#project a:hover {
 }
 
 section#banner-bumdes {
-    background-image: url("/assets/home/img/portfolio/banner-bumdes.png");
+    background-image: url("/storage/img/portfolio/banner-bumdes.png");
     background-size: cover;
     width: 100%;
     height: 500px;
@@ -432,7 +432,7 @@ section#banner-bumdes {
 }
 
 #impact .bg-impact {
-    background-image: url("/assets/home/img/portfolio/banner-section-1.png");
+    background-image: url("/storage/img/portfolio/banner-section-1.png");
     background-size: cover;
     width: 100%;
     height: auto;
@@ -443,7 +443,7 @@ section#banner-bumdes {
 /* style pendekatan */
 /* banner */
 section#banner-approach {
-    background-image: url("/assets/home/img/pendekatan/banner.png");
+    background-image: url("/storage/img/pendekatan/banner.png");
     background-size: cover;
     width: 100%;
     height: 500px;
@@ -466,7 +466,7 @@ section#approach-content .right-card-detail {
 /* style pelatihan */
 /* banner */
 section#banner-entrepreneurship {
-   background-image: url("/assets/home/img/pelatihan/banner-entrepreneurship.png");
+   background-image: url("/storage/img/pelatihan/banner-entrepreneurship.png");
    background-size: cover;
    width: 100%;
    height: 500px;
@@ -475,7 +475,7 @@ section#banner-entrepreneurship {
 /* style publikasi */
 /* banner */
 section#banner-publication {
-   background-image: url("/assets/home/img/pelatihan/banner-publication.png");
+   background-image: url("/storage/img/pelatihan/banner-publication.png");
    background-size: cover;
    width: 100%;
    height: 500px;
@@ -484,7 +484,7 @@ section#banner-publication {
 /* style pendampingan */
 /* banner */
 section#banner-accompaniment {
-   background-image: url("/assets/home/img/pelatihan/banner-accompaniment.png");
+   background-image: url("/storage/img/pelatihan/banner-accompaniment.png");
    background-size: cover;
    width: 100%;
    height: 500px;
@@ -493,7 +493,7 @@ section#banner-accompaniment {
 /* style kontak */
 /* banner */
 section#banner-contact {
-   background-image: url("/assets/home/img/contact/banner-contact.png");
+   background-image: url("/storage/img/contact/banner-contact.png");
    background-size: cover;
    width: 100%;
    height: 500px;

@@ -85,7 +85,7 @@
          onIdle: function() {
             fetch('/web-admin/logout', {
                   headers: {
-                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                     'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
                   },
                   method: 'POST'
                })

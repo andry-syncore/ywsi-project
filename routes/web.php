@@ -21,11 +21,13 @@ Route::prefix('web-admin')->controller(AuthController::class)->group(function($r
    $route->post('logout', 'logout')->name('logout');
 });
 
-Route::get('dashboard', function() {
-   return view('admin.dashboard.index', [
-      'title' => 'Dashboard'
-   ]);
-})->name('dashboard')->middleware(['auth', 'admin']);
+Route::middleware(['auth', 'admin'])->group(function($route) {
+   $route->get('dashboard', function() {
+      return view('admin.dashboard.index', [
+         'title' => 'Dashboard'
+      ]);
+   })->name('dashboard');
+});
 
 // Route user
 Route::get('/', function () {

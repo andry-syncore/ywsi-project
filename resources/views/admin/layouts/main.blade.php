@@ -15,12 +15,17 @@
       integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- SB Admin CSS -->
    <link rel="stylesheet" href="{{ asset('assets/admin/css/sb-admin-2.min.css') }}">
+   <!-- DataTables CSS -->
+   <link rel="stylesheet" href="{{ asset('assets/admin/vendor/datatables/DataTables/css/dataTables.bootstrap4.min.css') }}">
+   <link rel="stylesheet" href="{{ asset('assets/admin/vendor/datatables/FixedColumns/css/fixedColumns.bootstrap4.min.css') }}">
+   <link rel="stylesheet" href="{{ asset('assets/admin/vendor/datatables/FixedHeader/css/FixedHeader.bootstrap4.min.css') }}">
+   <link rel="stylesheet" href="{{ asset('assets/admin/vendor/datatables/Buttons/css/buttons.bootstrap4.min.css') }}">
    <!-- Custom CSS -->
    <link rel="stylesheet" href="{{ asset('assets/home/css/style.css') }}">
    <!-- favicon -->
    <link rel="shortcut icon" href="{{ asset('storage/img/logo-white.svg') }}" type="image/x-icon">
 
-   <title>Dashboard</title>
+   <title>{{ $title }}</title>
 </head>
 
 <body id="page-top">
@@ -55,6 +60,20 @@
    <script src="{{ asset('assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
    <!-- SB Admin JS -->
    <script src="{{ asset('assets/admin/js/sb-admin-2.min.js') }}"></script>
+   <!-- DataTables JS -->
+   <script src="{{ asset('assets/admin/vendor/datatables/DataTables/js/jquery.dataTables.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/DataTables/js/dataTables.bootstrap4.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/Buttons/js/dataTables.buttons.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/Buttons/js/buttons.bootstrap4.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/Buttons/js/buttons.html5.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/Buttons/js/buttons.print.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/FixedColumns/js/dataTables.fixedColumns.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/FixedColumns/js/fixedColumns.bootstrap4.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/FixedHeader/js/dataTables.fixedHeader.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/FixedHeader/js/fixedHeader.bootstrap4.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/JSZip/jszip.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/pdfmake/pdfmake.min.js') }}"></script>
+   <script src="{{ asset('assets/admin/vendor/datatables/pdfmake/vfs_fonts.js') }}"></script>
    <!-- Idle JS -->
    <script src="{{ asset('assets/admin/js/js-idle.min.js') }}"></script>
    <!-- Font Awesome JS -->
@@ -68,7 +87,7 @@
          onIdle: function() {
             fetch('/web-admin/logout', {
                   headers: {
-                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                     'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
                   },
                   method: 'POST'
                })

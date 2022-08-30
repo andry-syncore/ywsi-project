@@ -1,4 +1,4 @@
-<ul class="navbar-nav bg-green-1 sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-green-1 sidebar sidebar-dark accordion" id="sidebar-ywsi">
 
    <!-- Sidebar - Brand -->
    <a class="sidebar-brand d-flex align-items-center" href="{{ route('dashboard') }}">
@@ -9,9 +9,9 @@
    <hr class="sidebar-divider my-0">
 
    <!-- Nav Item - Dashboard -->
-   <li class="nav-item">
-      <a class="nav-link" href="index.html">
-         <i class="fas fa-fw fa-tachometer-alt"></i>
+   <li class="nav-item {{ Route::is('dashboard') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('dashboard') }}">
+         <i class="fa-solid fa-gauge-high"></i>
          <span>Dashboard</span></a>
    </li>
 
@@ -20,81 +20,25 @@
 
    <!-- Heading -->
    <div class="sidebar-heading">
-      Interface
+      Portfolio
    </div>
 
-   <!-- Nav Item - Pages Collapse Menu -->
+   <!-- Nav Item - Portfolio Collapse Menu -->
    <li class="nav-item">
-      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-         <i class="fas fa-fw fa-cog"></i>
-         <span>Components</span>
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePortfolio" aria-expanded="true" aria-controls="collapsePortfolio">
+         <i class="fa-regular fa-newspaper"></i>
+         <span>Manage Portfolio</span>
       </a>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+      <div id="collapsePortfolio" class="collapse show" aria-labelledby="headingTwo" data-parent="#sidebar-ywsi">
          <div class="collapse-inner rounded bg-white py-2">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
+            <h6 class="collapse-header">Menu Portfolio : </h6>
+            <a class="collapse-item" href="">List Portfolio</a>
+            <a class="collapse-item" href="">Kategori Portfolio</a>
+            <a class="collapse-item" href="">Image Portfolio</a>
+            <a class="collapse-item" href="">Tujuan Penelitian</a>
+            <a class="collapse-item" href="">Link Share</a>
          </div>
       </div>
-   </li>
-
-   <!-- Nav Item - Utilities Collapse Menu -->
-   <li class="nav-item">
-      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-         <i class="fas fa-fw fa-wrench"></i>
-         <span>Utilities</span>
-      </a>
-      <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-         <div class="collapse-inner rounded bg-white py-2">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
-         </div>
-      </div>
-   </li>
-
-   <!-- Divider -->
-   <hr class="sidebar-divider">
-
-   <!-- Heading -->
-   <div class="sidebar-heading">
-      Addons
-   </div>
-
-   <!-- Nav Item - Pages Collapse Menu -->
-   <li class="nav-item active">
-      <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-         <i class="fas fa-fw fa-folder"></i>
-         <span>Pages</span>
-      </a>
-      <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-         <div class="collapse-inner rounded bg-white py-2">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item active" href="blank.html">Blank Page</a>
-         </div>
-      </div>
-   </li>
-
-   <!-- Nav Item - Charts -->
-   <li class="nav-item">
-      <a class="nav-link" href="charts.html">
-         <i class="fas fa-fw fa-chart-area"></i>
-         <span>Charts</span></a>
-   </li>
-
-   <!-- Nav Item - Tables -->
-   <li class="nav-item">
-      <a class="nav-link" href="tables.html">
-         <i class="fas fa-fw fa-table"></i>
-         <span>Tables</span></a>
    </li>
 
    <!-- Divider -->
